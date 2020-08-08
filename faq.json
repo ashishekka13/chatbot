@@ -61,7 +61,7 @@
         "value":["Yes, the details of the rewards programme will be shared with you when you receive the MoneyTap card through our partner bank."]
       }
     },
-    "2":{
+    "2": {
       "label":"Process",
       "value": [
         "1. How do I apply for MoneyTap? Is it simple?",
@@ -142,6 +142,157 @@
       },
       "15": {
         "value":["Your approval is instant, on the app. After that, we just need to complete the KYC formalities. There is NO CHARGE for approval. It is completely free."]
+      }
+    },
+    "3": {
+      "label": "Eligibility",
+      "value": [
+        "1. Who is eligible to apply for MoneyTap?",
+        "2. What are the documents required for applying for MoneyTap?",
+        "3. What documents should I keep ready for the KYC after approval on the app?",
+        "4. Do I need to open a Savings/Current account with Partner Bank for using MoneyTap?",
+        "5. Will you be contacting my employers?"
+      ],
+      "1": {
+        "value": [
+          "Anyone who meets the following criteria can apply:",
+          "Resident of Ahmedabad, Ambala, Anand, Aurangabad, Bengaluru, Bharuch, Bhopal, Bhubaneshwar, Chandigarh, Chennai, Coimbatore, Dehradun, Delhi, Erode, Faridabad, Gandhinagar, Greater Noida, Ghaziabad, Guntur, Gurgaon, Guwahati, Haridwar, Hyderabad, Indore, Jaipur, Jodhpur, Kochi, Kolhapur, Kolkata, Lucknow, Mangalore, Mohali, Mumbai, Mysore, Navi Mumbai, Nagpur, Nashik, Noida, Panchkula, Pune, Raipur, Rajkot, Salem, Secunderabad, Surat, Thane, Tirupati, Trichy, Vadodara, Vijayawada & Visakhapatnam. (We will expand to other cities shortly!)",
+          "Salaried employees and self-employed professionals like doctors, lawyers, shop owners, business owners etc with a minimum monthly salary of Rs. 20,000",
+          "23 years of age and above",
+          "List of self-employed professionals who are not eligible – Waiter, bellboy, watchman, Durbaan , sweeper, jamaadar, security guard, warden, coolie, cleaner, plumber, conductor, gunman, orderly, ward boy, firemen, Machine Operator, fitter, Electrician, Dhaba Employee, Tea stall / Juice shop owner, Paan Walla/ Pan shop Owner, butcher shop Owner, Driller, Fire Operator, welder, mazdoor, workman, carpenter, mistry, labor, daftry, helper, peon, caretaker, Loco Pilot, Driver, Lab Attendant, Worker, Messenger, Hawaldar, sepoy, constable, office assistants, tailor, crane operator, halwai, gardener, car cleaner, maid, property dealer, travel agents, Insurance Agents, Contractors, Astrologers, yoga instructors, gym instructor, priests, Purohits, field sales executives and pawn brokers"
+        ]
+      },
+      "2": {
+        "value": [
+          "Before you open the MoneyTap app, please have the following information handy:",
+          "Aadhaar Card (preferred, not mandatory) or at least Aadhaar Number",
+          "Pan Card (mandatory)",
+          "Your Company Name, Company email address",
+          "Net Banking login information for your salary account"
+        ]
+      },
+      "3": { 
+        "value" : [
+          "ID proof (PAN, driving license, Aadhaar, Passport, Voter ID etc.)",
+          "Address proof (passport, Aadhaar, etc.)"
+        ]
+      },
+      "4": {
+        "value" : ["It is not compulsory to open an account in the bank"]
+      },
+      "5": {
+        "value" : ["No. We only ask for your official email ID verification as a way of verifying your employment. We will send a secure link to that email which you will have to click on by logging into your work email."]
+      }
+    },
+    "4": {
+      "label": "Fees",
+      "value": [
+        "1. What are the fees and interest charges I have to pay? Why should I pay them? Are there hidden fees?",
+        "2. How does tenure affect the total interest I have to pay?",
+        "3. What happens if I miss the payment on the due date?",
+        "4. Will I be charged extra if I use my card overseas?"
+      ],
+      "1": {
+        "value": [
+          "At MoneyTap, we pride ourselves in being customer friendly and transparent. Every time you withdraw cash or use the card, the interest rates and fee structure will be visible to you. So you are absolutely clear on what you are paying for. Here is what you pay, no hidden fees:",
+          "1. There is no fee for downloading the app and getting the approval. Even if you are denied for any reason, you will pay zero fees.",
+          "2. Rs. 499 + Service Tax as Annual Line Setup Fee in order to avail the MoneyTap facility. This amount not only allows us and our banking partners to “block” the amount of money so that you can withdraw it 24 hours a day, 7 days a week. The above fee also includes all the initial home visits and processing of your KYC.",
+          "3. 15% to 18% annual Interest Rate. You pay an interest on the amount of money you withdraw. The exact interest rate varies depending on your credit profile (if you have had any defaults or bounced cheques in the past), income, etc. as well as the tenure you want to pay the money back. The exact interest rate will be shown along with your monthly EMI and you will have to approve it before you are charged for anything.",
+          "4. 2% + Service Tax as Processing Fee. Every time you withdraw from the app, you are charged for a processing fee only on the amount of cash transferred, which is added to your next credit card statement.",
+          "5. You also get to use MoneyTap card like a regular credit card. Any charges you make on the card while shopping will be interest free provided you pay it back within the due date every month.",
+          "6. You will also have the option to convert any card spend of more than Rs.3000 to EMIs on your App, if you do not want to pay it back during that billing cycle. The interest and service charges will be shown to you on your app at the time of conversion.",
+          "7. Late payment fee – 15% on the amount due: If you do not pay your monthly bills on time, there will be a late payment penalty."
+        ]
+      },
+      "2": {
+        "value": ["The longer the tenure you choose (i.e. 3 years instead of 3 months), the lesser will be your monthly EMI outflow. Shorter tenures mean greater EMI burden, but your EMI is repaid faster."]
+      },
+      "3": { 
+        "value" : [
+          "We will be reminding you on your app to pay on or before the due date. Most people do not realize this but missing your payment on the due date will have the following negative effects:",
+          "a) Our partner bank will report this to the credit bureaus (CIBIL, Experian, Equifax, Highmark) and your credit history will be negatively impacted. You will feel the impact in the future, when you try to take any other loan or credit card (e.g. a Home loan or a Car/Two-wheeler loan).",
+          "b) You will incur a late payment fee, which 15% of the amount due (min Rs.350 and max Rs.1000).",
+          "c) If you don’t pay after continual reminders, the bank might initiate recovery proceedings.",
+          "So, please don’t miss your payments!"
+        ]
+      },
+      "4": {
+        "value" : ["If you opt for an International card, standard international charges are applicable on your credit card transactions at various merchants. These will be communicated to you by our partner bank once you receive your MoneyTap card."]
+      }
+    },
+    "5": {
+      "label": "Security",
+      "value": [
+        "1. Is it safe to apply for MoneyTap online?",
+        "2. You ask for internet banking details. How safe is it? Should I share my bank's credentials?",
+        "3. What security measures do you employ?",
+        "4. How do I know my account transaction and payment details?",
+        "5. What if I uninstall the app or buy a new phone?",
+        "6. What if I change my SIM?"
+      ],
+      "1": {
+        "value": [
+          "It is absolutely safe. All your sensitive information, which are personal, financial or related to employment are encrypted through the Secure Socket Layer (SSL) protocol, used by leading institutions across the world. Your information is kept absolutely safe. Please refer to our Privacy Policy. We will not share your information with any marketing agencies or tele-callers who will call to sell you other products.",
+          "Our systems have been designed such that most of the steps are automated. Our IT systems are checked and approved by the IT and Data Security teams of our partner banks. We are legally compliant with all data privacy and IT security norms in India."
+        ]
+      },
+      "2": {
+        "value": [
+          "This is a very legitimate concern. However, you need not worry.",
+          "○ We cannot access or tamper your financial details as we establish a read-only connection with your bank and your net banking security is not breached.",
+          "○ The banks prefer to receive your banking details electronically. This is a much safer and easier option.",
+          "○ Your bank details are stored securely. We do not have access to your internet banking password nor do we have the ability to change your banking details.",
+          "○ We only use the information to pull your bank statements. We cannot, for instance, add a beneficiary or make payments from your account.",
+          "○ And lastly, we ensure that the auto-logout feature is enabled within a few seconds!"
+        ]
+      },
+      "3": { 
+        "value" : ["We use SSL and other industry standard encryption technologies while exchanging sensitive data with the application and with banking partners. Our systems have been designed such that most of the steps are automated. Our IT systems are checked and approved by the IT and Data Security teams of our partner banks. We are legally compliant with all data privacy and IT security norms in India."]
+      },
+      "4": {
+        "value" : [
+          "All the information will be on the app – at your fingertips.",
+          "All the information on transactions and upcoming payments will be available on the MoneyTap app. Additionally, our partner bank will also send you a credit card statement and will list your transactions and upcoming payments."
+        ]
+      },
+      "5": {
+        "value": [
+          "If you uninstall the app, you will not be able to use any of the functionalities provided by MoneyTap including using money in cash. However, the EMIs you owe will still be processed by the Bank and all loan obligations on the amounts withdrawn will continue. We will not be able to remind you about your upcoming payments.",
+          "You will continue to get your credit card statements from our partner bank, so you can continue paying your bills on time.",
+          "Uninstalling the app will not be considered good credit behaviour as we will not be able to remind you of your pending payments.",
+          "Once you buy a new phone, you can download the app again and sign in using your password. At that time, ALL your data will be automatically restored and you will continue your MoneyTap experience."
+        ]
+      },
+      "6": { 
+        "value" : ["You can login to our app as an existing user using your registered email ID and update your phone number. Please note that you should also intimate the bank regarding the change in phone number."]
+      }
+    },
+    "6": {
+      "label": "Support",
+      "value": [
+        "1. What if I get stuck and my app shuts down before the completion of the application on the app? Do I have to restart the process?",
+        "2. How do I update/change my mailing address, mobile number or e-mail ID registered under my MoneyTap account?",
+        "3. Whom should I contact for other queries?",
+        "4. What type of phones do you support? What if I have a Nokia/Microsoft/i-Phone?",
+        "5. When will you support i-Phone or Windows Phone or Blackberry?"
+      ],
+      "1": {
+        "value": ["No, you just need to open our app and you can continue from where you left. In case of any other problems feel free to contact us at hello@moneytap.com."]
+      },
+      "2": {
+        "value": [ "Please contact customer care or email us at hello@moneytap.com"]
+      },
+      "3": { 
+        "value" : ["Please contact us at hello@moneytap.com for any queries or if you change your phone number. This is a critical security requirement, since your funds are tied to your phone number and KYC details."]
+      },
+      "4": {
+        "value" : [
+          "We currently only support Android phones, versions 4.2 and above.",
+          "We might support iPhone, Blackberry and Windows phones in the future but we do not have fixed dates."
+        ]
+      },
+      "5": {
+        "value": ["We might support some of these in the future but we do not have fixed dates."        ]
       }
     }
   },
