@@ -3,7 +3,6 @@ package com.mwyn.chatbot.requestHandler.sessionManager;
 
 import org.springframework.stereotype.Service;
 
-import javax.jws.soap.SOAPBinding;
 import java.util.HashMap;
 import java.util.List;
 
