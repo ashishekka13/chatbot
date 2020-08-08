@@ -65,6 +65,10 @@ public class MessageParser {
             else return UNRECOGNISED;
         }
 
+        List<String> ls=new ArrayList<>();
+        ls.add(message);
+        try {
+            String st= Dialogflow.detectIntentTexts("twilio-chatbot-gpgm", ls,UUID.randomUUID().toString(),"en-US");
             if(st.substring(0,3).equals("otp"))
                 st=st.substring(4);
             else if(st.substring(0,2).equals("ph"))
