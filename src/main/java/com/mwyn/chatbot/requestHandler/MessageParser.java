@@ -76,7 +76,8 @@ public class MessageParser {
             else {
                 List<Integer> fetch = new ArrayList<>();
                 for (int i = 0; i < st.length(); i++) {
-                    fetch.add(Integer.parseInt(String.valueOf(st.charAt(i))));
+                    if(st.charAt(i)!=',')
+                        fetch.add(Integer.parseInt(String.valueOf(st.charAt(i))));
                 }
                 System.out.println(fetch);
                 String response=faqHandler.getResponse(fetch,user);
