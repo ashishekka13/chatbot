@@ -52,11 +52,14 @@ public class RequestHandler {
 
     @RequestMapping(method=RequestMethod.POST , value="/try")
     public String test(){
-        System.out.println("Api hit1");
-        faqs.parse();
-
-        System.out.println(  faqs.getResponse(Arrays.asList(1,1)));
-        return "Yes";
+        Dialogflow dialogflow = new Dialogflow();
+        try {
+            dialogflow.callback();
+            return "done";
+        }catch (Exception e){
+            System.out.println(e);
+            return "fail";
+        }
     }
 
 }

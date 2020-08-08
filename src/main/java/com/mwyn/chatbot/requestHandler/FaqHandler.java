@@ -1,6 +1,7 @@
 package com.mwyn.chatbot.requestHandler;
 
 import com.fasterxml.jackson.databind.util.JSONPObject;
+import com.mwyn.chatbot.requestHandler.helpers.Constants;
 import com.mwyn.chatbot.requestHandler.sessionManager.SessionServices;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
@@ -22,6 +23,9 @@ public class FaqHandler {
      @Autowired
      private SessionServices sessionServices;
 
+     @Autowired
+     private CallBackHandler callBackHandler;
+
 
      public void parse() {
 
@@ -39,7 +43,7 @@ public class FaqHandler {
           }
      }
 
-     public String getResponse(List<Integer> path){
+     public String getResponse(List<Integer> path, String user){
           this.parse();
           System.out.println("called1");
 
@@ -48,19 +52,43 @@ public class FaqHandler {
           System.out.println(jo.toJSONString().toString());
           JSONObject nextVal=jo;
           while(pathIterator.hasNext()){
-               nextVal = ((JSONObject) nextVal.get(pathIterator.next().toString()));
+               try {
+                    nextVal = ((JSONObject) nextVal.get(pathIterator.next().toString()));
+                    if(nextVal==null){
+                         return null;
+                    }
+               }catch (Exception e){
+                    return null;
+               }
           }
           JSONArray response = (JSONArray) nextVal.get("value");
           Iterator itr2 = response.iterator();
           String responseString="";
           while (itr2.hasNext()){
+               if(responseString.startsWith("%")) {
+                    callBackHandler.Callback(user,responseString.substring(1));
+
+               }
                responseString = responseString +"\n"+ itr2.next();
           }
           return responseString;
      }
 
-     public String getResponse(String user){
-
-          return this.getResponse(sessionServices.getSession(user).getStates());
+     public String handleInputExp(String user){
+          sessionServices.popFaqState(user);
+          return Constants.MESSAGE.UNRECOGNISED;
      }
+
+     public String getResponse(String user){
+          try {
+               String response = this.getResponse(sessionServices.getSession(user).getStates());
+               if(response==null) {
+                    return handleInputExp(user);
+               }
+               return response;
+          }catch (Exception e) {
+               return handleInputExp(user);
+          }
+     }
+     
 }

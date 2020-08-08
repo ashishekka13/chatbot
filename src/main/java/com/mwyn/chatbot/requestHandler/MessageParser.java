@@ -1,29 +1,45 @@
 package com.mwyn.chatbot.requestHandler;
 
 
+import com.mwyn.chatbot.requestHandler.helpers.Constants;
 import com.mwyn.chatbot.requestHandler.sessionManager.SessionServices;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 @Service
 public class MessageParser {
 
     @Autowired
-    FaqHandler faqHandler;
+    private FaqHandler faqHandler;
+
+    private static Pattern pattern = Pattern.compile("\\d+");
 
     @Autowired
-    SessionServices sessionServices;
+    private SessionServices sessionServices;
+
 
     public String parse(String user, String message){
         if(sessionServices.isNew(user)){
-            return faqHandler.getResponse(user);
+            return faqHandler.getResponse(user) + "\n"+ Constants.MESSAGE.MENU_FOOTER;
         }
 
-        if(message.length()<=1){
-            int i = Integer.parseInt(message.trim());
-            sessionServices.addFaqState(user,i);
-            return faqHandler.getResponse(user);
+        if(message.length()<=4){
+            Matcher matcher = pattern.matcher(message);
+            if(matcher.find()) {
+                int i = Integer.parseInt(message.substring(matcher.start(),matcher.end()));
+                if(i==0) {
+                    sessionServices.popFaqState(user);
+                }
+                else sessionServices.addFaqState(user, i);
+                String response = faqHandler.getResponse(user);
+                return response;
+            }
         }
-        return "Sorry, I couldn't understand that.";
+
+
+        return "NLP processing needed";
     }
 }

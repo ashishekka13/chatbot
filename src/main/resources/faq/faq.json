@@ -297,8 +297,9 @@
     }
   },
   "2": {
-    "value": [
-
-    ]
+    "value": ["1.What is My Application Status?"],
+    "1": {
+      "value": ["Your Application Status is", "%CHECK_APPLICATION",".For more details visit our Official App" ]
+    }
   }
 }
