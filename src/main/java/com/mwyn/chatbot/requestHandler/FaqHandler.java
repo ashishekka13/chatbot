@@ -15,6 +15,8 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 
+import static com.mwyn.chatbot.requestHandler.helpers.Constants.MESSAGE.UNRECOGNISED;
+
 @Service
 public class FaqHandler {
 
@@ -55,40 +57,42 @@ public class FaqHandler {
                try {
                     nextVal = ((JSONObject) nextVal.get(pathIterator.next().toString()));
                     if(nextVal==null){
-                         return null;
+                         this.handleInputExp(user);
                     }
                }catch (Exception e){
-                    return null;
+                    this.handleInputExp(user);
                }
           }
           JSONArray response = (JSONArray) nextVal.get("value");
           Iterator itr2 = response.iterator();
           String responseString="";
           while (itr2.hasNext()){
-               if(responseString.startsWith("%")) {
-                    callBackHandler.Callback(user,responseString.substring(1));
-
+               String next=  itr2.next() + "";
+               if(next.startsWith("%")) {
+                    String s = callBackHandler.Callback(user,next.substring(1));
+                    if (s == null || s.length()<=0){
+                         return null;
+                    }
+                    responseString = responseString +" "+ s;
                }
-               responseString = responseString +"\n"+ itr2.next();
+               else {
+                    responseString = responseString + "\n" + next;
+               }
           }
           return responseString;
      }
 
      public String handleInputExp(String user){
           sessionServices.popFaqState(user);
-          return Constants.MESSAGE.UNRECOGNISED;
+          return UNRECOGNISED;
      }
 
      public String getResponse(String user){
-          try {
+
                String response = this.getResponse(sessionServices.getSession(user).getStates(),user);
-               if(response==null) {
-                    return handleInputExp(user);
-               }
+
                return response;
-          }catch (Exception e) {
-               return handleInputExp(user);
-          }
+
      }
      
 }

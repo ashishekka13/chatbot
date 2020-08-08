@@ -1,22 +1,13 @@
 package com.mwyn.chatbot.requestHandler;
 
-
-import com.twilio.twiml.MessagingResponse;
-import com.twilio.twiml.messaging.Body;
-import com.twilio.twiml.messaging.Message;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;
-import java.sql.SQLOutput;
-import java.util.Arrays;
-import java.util.Enumeration;
-import java.util.List;
 
 
 @RestController
 public class RequestHandler {
-
 
 
     @Autowired
@@ -25,11 +16,15 @@ public class RequestHandler {
     @Autowired
     private MessageParser messageParser;
 
+    @Autowired
+    private CallBackHandler callBackHandler;
 
     @RequestMapping(value = "/home")
     public String Home(){
+//        callBackHandler.sendTo("whatsapp:+917768006557","Hey theree");
         return  "Hello. You are home. Please stay here";
     }
+
 
     @PostMapping(path = "/messageRequest", consumes = "application/x-www-form-urlencoded")
 //    @RequestMapping(method = RequestMethod.POST, value = "/messageRequest")
