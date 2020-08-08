@@ -81,7 +81,7 @@ public class FaqHandler {
 
      public String getResponse(String user){
           try {
-               String response = this.getResponse(sessionServices.getSession(user).getStates());
+               String response = this.getResponse(sessionServices.getSession(user).getStates(),user);
                if(response==null) {
                     return handleInputExp(user);
                }

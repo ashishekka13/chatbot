@@ -297,9 +297,53 @@
     }
   },
   "2": {
-    "value": ["1.What is My Application Status?"],
+    "value": ["1.What is My Application Status?",
+              "2.When will I receive the call for verification?",
+              "3.When will the executive collect my documents/signature?",
+              "4.Why did I get rejected?",
+              "5.What's the due amount and due date?",
+              "6.Why is my IMPS feature blocked?",
+              "7.Why didn't the field executive come for pickup? ",
+              "8.I've signed the application but still the tracker is not updated? ",
+              "9.My documents have been picked-up, still waiting for the approval? ",
+              "10.I have not received the tele verification call yet. ",
+              "11.I want to cancel or delete the application. I'm not interested anymore.",
+              "12.I want to change a few details like email id, phone number, address etc."],
     "1": {
       "value": ["Your Application Status is", "%CHECK_APPLICATION",".For more details visit our Official App" ]
+    },
+    "2": {
+      "value": ["You should receive the call for verification within", "%VERIFICATION_CALL", ".If you do not receive the call by then, please reach out to us at hello@moneytap.com"]
+    },
+    "3": {
+      "value": ["Your documents will be collected within", "%COLLECTION_TIME", ".If it doesn't happen by then, please reach out to us at hello@moneytap.com"]
+    },
+    "4": {
+      "value": ["Please reach out to us at hello@moneytap.com and we will relay back to you soon"]
+    },
+    "5": {
+      "value": ["Please check your app for details pertaining to due amount and due date."]
+    },
+    "6": {
+      "value": ["Please reach out to us at hello@moneytap.com and we will relay back to you soon"]
+    },
+    "7": {
+      "value": ["Due to some unforseen circumstances. They will come soon.Please reach out to us at hello@moneytap.com if there is more delay"]
+    },
+    "8": {
+      "value": ["It will get updated shortly.If the problem still persists, please reach out to us at hello@moneytap.com"]
+    },
+    "9": {
+      "value": ["Please reach out to us at hello@moneytap.com and we will relay back to you soon"]
+    },
+    "10": {
+      "value": ["Please reach out to us at hello@moneytap.com and we will relay back to you soon"]
+    },
+    "11": {
+      "value": ["Please check your app for details related to deleting your application."]
+    },
+    "12": {
+      "value": ["Please check your app for details related to changing details in your application."]
     }
   }
 }

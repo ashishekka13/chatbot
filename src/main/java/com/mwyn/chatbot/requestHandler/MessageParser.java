@@ -6,6 +6,9 @@ import com.mwyn.chatbot.requestHandler.sessionManager.SessionServices;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.UUID;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -21,7 +24,7 @@ public class MessageParser {
     private SessionServices sessionServices;
 
 
-    public String parse(String user, String message){
+    public String parse(String user, String message) {
         if(sessionServices.isNew(user)){
             return faqHandler.getResponse(user) + "\n"+ Constants.MESSAGE.MENU_FOOTER;
         }
@@ -39,7 +42,29 @@ public class MessageParser {
             }
         }
 
+        List<String> ls=new ArrayList<>();
+        ls.add(message);
+        try {
+            String st= Dialogflow.detectIntentTexts("twilio-chatbot-gpgm", ls,UUID.randomUUID().toString(),"en-US");
 
-        return "NLP processing needed";
+            if(st.substring(0,3).equals("otp"))
+                st=st.substring(4);
+            else if(st.substring(0,2).equals("ph"))
+                st=st.substring(3);
+            else {
+                List<Integer> fetch = new ArrayList<>();
+                for (int i = 0; i < st.length(); i++) {
+                    fetch.add(Integer.parseInt(String.valueOf(st.charAt(i))));
+                }
+                System.out.println(fetch);
+                String response=faqHandler.getResponse(fetch,user);
+                return response;
+
+            }
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return "sorry!try that again";
     }
 }
