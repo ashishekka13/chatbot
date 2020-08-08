@@ -23,8 +23,35 @@ public class SessionServices {
         switch (id){
             case "mobile" : session.setMobile(value); break;
             case "applicationId": session.setApplicationId(value); break;
+            case "otp" : session.setOtp(value); break;
+            case "requestedAttribute" : session.setRequestedAttribute(value); break;
             default:
         }
+    }
+
+    public void authenticate(String user,String otp){
+        UserSession session = sessions.get(user);
+        session.setValid(true);
+        session.setToken("<token>");
+
+    }
+
+    public String getField(String user, String id){
+        UserSession session;
+        session = sessions.get(user);
+        switch (id){
+            case "mobile" : return session.getMobile();
+            case "applicationId": return session.getApplicationId();
+            case "otp" : return session.getOtp();
+            case "requestedAttribute" : return session.getRequestedAttribute();
+            default: return null;
+        }
+    }
+
+    public boolean isAuthenticated(String user){
+        if(this.getSession(user).isValid())
+            return true;
+        return false;
     }
 
     public void addFaqState(String user, int val){
