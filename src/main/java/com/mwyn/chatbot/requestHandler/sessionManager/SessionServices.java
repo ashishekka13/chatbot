@@ -74,6 +74,14 @@ public class SessionServices {
             states.clear();
     }
 
+    public void setFaqState(String user, List<Integer> state) {
+        UserSession session = this.getSession(user);
+        List<Integer> states = session.getStates();
+        if(states.size()>0)
+            states.clear();
+        states.addAll(state);
+    }
+
     public void setSession(String user, String id, int value){
         UserSession session;
 

@@ -37,7 +37,7 @@ public class MessageParser {
             if(matcher.find()) {
                 int i = Integer.parseInt(message.substring(matcher.start(),matcher.end()));
                 if(i==0) {
-                    sessionServices.popFaqState(user);
+                    sessionServices.resetFaqState(user);
                 }
                 else sessionServices.addFaqState(user, i);
                 String response = faqHandler.getResponse(user);
@@ -80,7 +80,10 @@ public class MessageParser {
                         fetch.add(Integer.parseInt(String.valueOf(st.charAt(i))));
                 }
                 System.out.println(fetch);
+                sessionServices.setFaqState(user,fetch);
                 String response=faqHandler.getResponse(fetch,user);
+                if (fetch.size()>2)
+                    sessionServices.resetFaqState(user);
                 return response;
 
             }
@@ -88,6 +91,6 @@ public class MessageParser {
         } catch (Exception e) {
             e.printStackTrace();
         }
-        return "sorry!try that again";
+        return UNRECOGNISED;
     }
 }
