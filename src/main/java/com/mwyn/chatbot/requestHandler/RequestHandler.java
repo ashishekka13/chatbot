@@ -17,8 +17,14 @@ import java.util.List;
 @RestController
 public class RequestHandler {
 
+
+
     @Autowired
     private FaqHandler faqs;
+
+    @Autowired
+    private MessageParser messageParser;
+
 
     @RequestMapping(value = "/home")
     public String Home(){
@@ -28,26 +34,25 @@ public class RequestHandler {
     @PostMapping(path = "/messageRequest", consumes = "application/x-www-form-urlencoded")
 //    @RequestMapping(method = RequestMethod.POST, value = "/messageRequest")
     public String receiveMessage(HttpServletRequest req){
-        Enumeration<String> params = req.getParameterNames();
 //        System.out.println(req.getBody());
         System.out.println("API hit");
         System.out.println(req.getParameter("Body"));
 //        System.out.println(req.getBody().toString());
         String from = req.getParameter("From");
-        System.out.println(from                                     );
+        String message=req.getParameter("Body");
+        System.out.println(from);
 
-
+        return messageParser.parse(from,message);
 //        Body body = new Body.Builder("Hey there").build();
 //        Message reply = new Message.Builder().body(body).build();
 //        MessagingResponse response = new MessagingResponse.Builder().message(reply).build();
 
-        return "hey you";
+//        return "hey you";
     }
 
     @RequestMapping(method=RequestMethod.POST , value="/try")
     public String test(){
         System.out.println("Api hit1");
-
         faqs.parse();
 
         System.out.println(  faqs.getResponse(Arrays.asList(1,1)));
