@@ -32,5 +32,7 @@ public class Constants {
         }
 
         public static final String CHECK_APPLICATION = "CHECK_APPLICATION";
+        public static final String VERIFICATION_CALL = "VERIFICATION_CALL";
+        public static final String COLLECTION_TIME = "COLLECTION_TIME";
     }
 }

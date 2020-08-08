@@ -12,7 +12,7 @@ import com.twilio.type.PhoneNumber;
 import java.text.DecimalFormat;
 import java.util.Random;
 
-import static com.mwyn.chatbot.requestHandler.helpers.Constants.CALLBACKS.CHECK_APPLICATION;
+import static com.mwyn.chatbot.requestHandler.helpers.Constants.CALLBACKS.*;
 import static com.mwyn.chatbot.requestHandler.helpers.Constants.MESSAGE.*;
 
 @Service
@@ -80,20 +80,20 @@ public class CallBackHandler {
     private String getVerificationHelpAPI(String user) {
         int key = Integer.parseInt(user.substring(user.length() - 1))%4;
         switch (key){
-            case 0: return "Your Application status is pending. You'll receive a call in 5-6 working days";
-            case 1: return "We'll reach out to you by the end of the day. Thank you for our Patience.";
-            case 2: return "Our executives will be visiting your place today between 9am-6pm.";
-            default: return "You are already Approved. You won't be receiving any more verification calls from our end.";
+            case 0: return "5-6 working days";
+            case 1: return "a day or two. Thank you for our Patience.";
+            case 2: return "the next 24 hours.";
+            default: return "the next 2 hours";
         }
     }
 
     private String getExecutiveUpdatesAPI(String user) {
         int key = Integer.parseInt(user.substring(user.length() - 1))%4;
         switch (key){
-            case 0: return "Your Application status is pending. Our executives will reach out to you in a week";
-            case 1: return "Our Executives reach visit your address soon. Thank you for our Patience.";
-            case 2: return "Our executives will be visiting your place today between 9am-6pm.";
-            default: return "You are already Approved. Please wait for another 48 hours until your documents are processed.";
+            case 0: return "the next 10 days";
+            case 1: return "5-6 working days";
+            case 2: return "the next 2 days";
+            default: return "the next 12 hours.";
         }
     }
 
@@ -103,6 +103,10 @@ public class CallBackHandler {
         switch (function) {
             case CHECK_APPLICATION:
                 return checkApplicationStatus(user);
+            case VERIFICATION_CALL:
+                return getVerificationDetails(user);
+            case COLLECTION_TIME:
+                return getExecutiveDetails(user);
             default:
                 return function;
         }
