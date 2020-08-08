@@ -6,6 +6,9 @@
 ], 
   "1": {
     "value": [
+      "https://youtu.be/nXqZAWSmHiE",
+      "*If* your query falls in anyone of the below category, write the corresponding number",
+      "*Otherwise* write your query manually(We will try our best to help you out)",
       "1. About Moneytap",
       "2. Process",
       "3. Eligibility",
@@ -16,6 +19,8 @@
     "1": {
       "label": "About Moneytap",
       "value": [
+        "*If* your query falls in anyone of the below category, write the corresponding number",
+        "*Otherwise* write your query manually(We will try our best to help you out)",
         "1. What is MoneyTap?",
         "2.Which banks have you partnered with?",
         "3.Can I take the money in cash and spend it on whatever I want? How?",
@@ -64,6 +69,8 @@
     "2": {
       "label":"Process",
       "value": [
+        "*If* your query falls in anyone of the below category, write the corresponding number",
+        "*Otherwise* write your query manually(We will try our best to help you out)",
         "1. How do I apply for MoneyTap? Is it simple?",
         "2. . Once I download the app, how much time will it take to complete the application?",
         "3. Will I get an approval even if I apply on a holiday or beyond banking hours?",
@@ -147,6 +154,8 @@
     "3": {
       "label": "Eligibility",
       "value": [
+        "*If* your query falls in anyone of the below category, write the corresponding number",
+        "*Otherwise* write your query manually(We will try our best to help you out)",
         "1. Who is eligible to apply for MoneyTap?",
         "2. What are the documents required for applying for MoneyTap?",
         "3. What documents should I keep ready for the KYC after approval on the app?",
@@ -187,6 +196,8 @@
     "4": {
       "label": "Fees",
       "value": [
+        "*If* your query falls in anyone of the below category, write the corresponding number",
+        "*Otherwise* write your query manually(We will try our best to help you out)",
         "1. What are the fees and interest charges I have to pay? Why should I pay them? Are there hidden fees?",
         "2. How does tenure affect the total interest I have to pay?",
         "3. What happens if I miss the payment on the due date?",
@@ -223,6 +234,8 @@
     "5": {
       "label": "Security",
       "value": [
+        "*If* your query falls in anyone of the below category, write the corresponding number",
+        "*Otherwise* write your query manually(We will try our best to help you out)",
         "1. Is it safe to apply for MoneyTap online?",
         "2. You ask for internet banking details. How safe is it? Should I share my bank's credentials?",
         "3. What security measures do you employ?",
@@ -270,6 +283,8 @@
     "6": {
       "label": "Support",
       "value": [
+        "*If* your query falls in anyone of the below category, write the corresponding number",
+        "*Otherwise* write your query manually(We will try our best to help you out)",
         "1. What if I get stuck and my app shuts down before the completion of the application on the app? Do I have to restart the process?",
         "2. How do I update/change my mailing address, mobile number or e-mail ID registered under my MoneyTap account?",
         "3. Whom should I contact for other queries?",
@@ -298,7 +313,69 @@
   },
   "2": {
     "value": [
-      
-    ]
+      "*If* your query falls in anyone of the below category, write the corresponding number",
+      "*Otherwise* write your query manually(We will try our best to help you out)",
+      "*If* your query falls in anyone of the below category, write the corresponding number",
+      "*Otherwise* write your query manually(We will try our best to help you out)",
+      "Are you interested in one of the following? (Reply with the number)",
+      "1. What is my application status?",
+      "2. Why did my application get rejected?",
+      "3. When will my documents be picked up?",
+      "4. Why didn't the field executive come for pickup?",
+      "5. I've signed the document but the tracker is not updated",
+      "6. What is the process and how much time will it take to get the final approval?",
+      "7. I have not received tele verification call yet.",
+      "8. I want to cancel or delete the application. I am not interested anymore?",
+      "9. I want to change a few details like email, phone no., address",
+      "10. Why did my IMPS get blocked?",
+      "11. What's the due date and due amount?",
+      "12. What's the foreclosure procedure?",
+      "13. How can I enhance the credit limit?",
+      "14. How can I pay?",
+      "",
+      "If you have any specific question, write it down."
+    ],
+    "1" :{
+      "value":[]
+    },
+    "2" :{
+      "value":[]
+    },
+    "3" :{
+      "value":[]
+    },
+    "4" :{
+      "value":[]
+    },
+    "5" :{
+      "value":[]
+    },
+    "6" :{
+      "value":[]
+    },
+    "7" :{
+      "value":[]
+    },
+    "8" :{
+      "value":[]
+    },
+    "9" :{
+      "value":[]
+    },
+    "10" :{
+      "value":[]
+    },
+    "11" :{
+      "value":[]
+    },
+    "12" :{
+      "value":[]
+    },
+    "13" :{
+      "value":[]
+    },
+    "14" :{
+      "value":[]
+    }
   }
 }
