@@ -19,7 +19,7 @@ import java.util.UUID;
 
 public class Dialogflow {
 
-    public static void detectIntentTexts(String projectId, List<String> texts, String sessionId,
+    public static String detectIntentTexts(String projectId, List<String> texts, String sessionId,
                                          String languageCode) throws Exception {
         // Instantiates a client
         try (SessionsClient sessionsClient = SessionsClient.create()) {
@@ -48,7 +48,10 @@ public class Dialogflow {
                 System.out.format("Detected Intent: %s (confidence: %f)\n",
                         queryResult.getIntent().getDisplayName(), queryResult.getIntentDetectionConfidence());
                 System.out.format("Fulfillment Text: '%s'\n", queryResult.getFulfillmentText());
+
+                return queryResult.getFulfillmentText();
             }
+            return "null";
         }
     }
     public void callback() throws Exception

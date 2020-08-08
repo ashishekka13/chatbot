@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "twilio-chatbot-gpgm",
+  "private_key_id": "6fe3aabc7f94efb913c78db0119168c6ba81ab3f",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQDA1rKbjCvM8AAb\nXlco7u1xtk+B9vsdXw82V29rs3Mi4j1Q632AKiEcBOG/np/NdO3KvrLfsvMDMDsV\nuVyt3jzyCRcQ3eza3J+pKzAqICSe9qByhnenzxYSFWZmjFkgDtAWjZlL0lEmwwCr\nHkY4iMFN4+A8yboCZr5w4F6uSvsdWH0cdgxFy3OVZS3yzFXtL7ErHvfty0HWCdw7\nQweQGzlPGRCn1iHhDzVHFBNK7tuHEVhbfl7qsYb05PSJ0DZDD8jig8xpBgWbYAkj\npR/PyqV6OIBNUBm/Kv4y/gsA7DZMCMq8KgCuT16J/Nta2g0MN1+VuG/Fejkscj64\nralxOWk5AgMBAAECggEABysb/S6vtKOHJNKj67ppAsvVBrbmihFDRKD+sXVcjki0\ndeOmePXn9e2OXO63EElHKyeds4rd4CnCHS+UgkVDWk3L85VaWrRDmPi+kTxRZtmH\nvfDMIHrxCOJOhI6gTrH6RTJa5y/bPX/XeyT0lYwA3+XnYKnGOOoL7NssWISNSJTg\nWm90VV/X/GOGv4H16ubsKqP5SctpwNhvHPtsTiRKAQOTpz/zrLZOf0Oo4FcZotvq\nBcknHTsFzjnH6vfz5f19w6gG07RU0+Y56h9CYZGQxTR5jpecQJ8b1izguM7OZZOp\nvD40BJ8aU4HeNOrClgo6KejP9H4wRMYLw0+yT7WycQKBgQDpBLvIlgNJ3I3NNzLD\nMLflqCUGtFjdRAju+EJNx+ygvDbcdADKHe9sPHqsAQsmmcnWOaIISg+ZToAr0zcu\nhlH9qNxCLeGi8YTIne6dhO2jV9SXxmUN61mAMVNFWBm0StXXBBtq3e9MYRiTeC+k\nwqSeuZDs9AEGezhyRKG6OzfNaQKBgQDT24BNIrxBW8Fn5qpqe4tjyiv0kUuqVI4d\n3cQsTPf4EvBI5TwQOVe120qyJ5rTmg3TpUbw1nsohIAQVuHdlXGdIayRb3pWqzMH\nE4c2mFTUw2kPdzr1mIpwkw0DFhT/mRDfdPgQ5VArdIsCXbXq9sIVkCTGjytmzs7i\nINFVlUmzUQKBgA8Zrm2eQxJLR6kv1YtOoewxDE017LhSC14pGmrd9NipuchpgA+Z\nBwX1mWGCI83Zk3ndfEGbQw2FR8sPQfky3SdaBQQI4yFjE17I1UjB74BxVaaMRco0\nITWsfJ/2yJuladwoOPqg7Tv+4s/Trwq3TmG21sx0N4jK/WpyRiTCZ6hZAoGAA93B\nnabAoMC36tl+yqquhIev/aqZIuagIVNmvRg6fkB6OhpU2kbxntP9rPqkDLCHCBHA\nFa0UWkzwuVuci5qqlB+FMrJCHUrKh5qHoStugOOAC1Q1sz2xaRSF7ER+5Zs5f5p2\n3HgS2ngqAUUMiNkv+YzD3wvF0v57MA1BRLqQucECgYBqRD0/8mkw16zGIG0Yp4z0\nAD70Ph9ER3f5Ek6u+d3pC4i1hDzqu5xf/ixNX9lGjBPIuMGoqtNAZjc2pKLza7Oy\nHfhClWtesR+K2o6vGCW+jMoCX4WRg4Ipy4McDlBNY573L6grdQLq7eO36Ni6+8Dk\njnytE7yWpdSiko2VCVEZIg==\n-----END PRIVATE KEY-----\n",
+  "client_email": "twilio-chatbot@twilio-chatbot-gpgm.iam.gserviceaccount.com",
+  "client_id": "117189900657173334342",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/twilio-chatbot%40twilio-chatbot-gpgm.iam.gserviceaccount.com"
+}
