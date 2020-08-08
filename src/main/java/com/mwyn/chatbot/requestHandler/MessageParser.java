@@ -16,7 +16,7 @@ public class MessageParser {
 
     public String parse(String user, String message){
         if(sessionServices.isNew(user)){
-            return "Welcome to MoneyTap. How Can I help you today \n"+faqHandler.getResponse(user);
+            return faqHandler.getResponse(user);
         }
 
         if(message.length()<=1){
