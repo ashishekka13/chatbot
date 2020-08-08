@@ -1,34 +1,153 @@
-{
-  "value": [
-    "1. About Moneytap",
-    "2. Process",
-    "3. Eligibility",
-    "4. Fees",
-    "5. Security",
-    "6. Support"
-  ],
+{ "value": [
+  "Hello! Please let us know the issue that you have.",
+  "Select by giving in the number",
+  "1. New User",
+  "2. Issues related to loan approval"
+], 
   "1": {
-    "label": "About Moneytap",
     "value": [
-      "1. What is MoneyTap?",
-      "2.Which banks have you partnered with?",
-      "3.Can I take the money in cash and spend it on whatever I want? How?",
-      "4.Do I have to pay interest? Is it high?",
-      "5.How can I use MoneyTap for shopping?",
-      "6.Can I use MoneyTap for any other purpose?",
-      "7.What if I don’t need the funds right now?",
-      "8.Is there a rewards program linked to my card?"
+      "1. About Moneytap",
+      "2. Process",
+      "3. Eligibility",
+      "4. Fees",
+      "5. Security",
+      "6. Support"
     ],
     "1": {
-      "value": ["MoneyTap is India’s first app-based personal credit line, offered in partnership with banks. With the tap of a button, this app lets you borrow as little as Rs. 3000 or as much as Rs. 5 lakhs depending on your credit limit that is set by our banking partners. More importantly, you pay interest only on what you use."]
-  },
-    "2": {
-      "value": ["We have partnered with multiple banks and NBFCs to bring you the best set of products. Depending on your profile, we will select the bank that has the highest chance of approving your application. Once approved, your bank will be shown to you."]
+      "label": "About Moneytap",
+      "value": [
+        "1. What is MoneyTap?",
+        "2.Which banks have you partnered with?",
+        "3.Can I take the money in cash and spend it on whatever I want? How?",
+        "4.Do I have to pay interest? Is it high?",
+        "5.How can I use MoneyTap for shopping?",
+        "6.Can I use MoneyTap for any other purpose?",
+        "7.What if I don’t need the funds right now?",
+        "8.Is there a rewards program linked to my card?"
+      ],
+      "1": {
+        "value": ["MoneyTap is India’s first app-based personal credit line, offered in partnership with banks. With the tap of a button, this app lets you borrow as little as Rs. 3000 or as much as Rs. 5 lakhs depending on your credit limit that is set by our banking partners. More importantly, you pay interest only on what you use."]
+      },
+      "2": {
+        "value": ["We have partnered with multiple banks and NBFCs to bring you the best set of products. Depending on your profile, we will select the bank that has the highest chance of approving your application. Once approved, your bank will be shown to you."]
+      },
+      "3": { 
+        "value" : ["Yes. You can transfer money from your app to your bank account and can use your regular ATM card to withdraw funds and use them as you wish or NEFT/IMPS to someone depending on your needs. The funds are yours."]
+      },
+      "4": {
+        "value" : ["You have to pay interest only on the funds you use. At the time of withdrawal, you can choose the terms of repayment, which can be anywhere between 2 months and 3 years. The repayment tenure you choose will determine your EMIs.",
+          "The interest rate is equivalent to market rates for any ‘personal loan’ with zero collateral or security. It can be as low as 1.25% per month depending on the partner bank and the credit profile of the user."]
+      },
+      "5": {
+        "value" : ["In addition to the App, the partner bank which approved your application will issue you a MoneyTap credit card that will be sent directly to your house. This can be used like a credit card at any shop or e-commerce website. The card is linked to the app and all the transactions will appear on the app. At the end of the month, like any other credit card, you can pay the balance at once or in part. All the shopping on your card will be interest free until the credit card payment is due.\nYou can also convert all applicable purchases on the card to EMIs with just a tap on the app if you cannot pay the entire balance at the end of the month. This conversion will save you a significant amount of interest.",
+          "You can also convert all applicable purchases on the card to EMIs with just a tap on the app if you cannot pay the entire balance at the end of the month. This conversion will save you a significant amount of interest."]
+      },
+      "6": {
+        "value" : ["Yes. MoneyTap can be used to meet the money/financial requirements for any kind of personal use. Our customers typically use MoneyTap for the following reasons:\n\tWeddings\n\tBirth & Death\n\tTwo-wheeler deposits\n\tHome renovation\n\tHouse rent deposits\n\tShopping\n\tChildren’s school fees\n\tMedical emergencies",
+          "○ Weddings",
+          "○ Birth & Death",
+          "○ Two-wheeler deposits",
+          "○ Home renovation",
+          "○ House rent deposits",
+          "○ Shopping",
+          "○ Children’s school fees",
+          "○ Medical emergencies"
+        ]
+      },
+      "7": {
+        "value" :["Get approved for the limit now so that you can have money at your disposal whenever you need it. Once your credit limit is approved, you can access the funds 24 hours a day, 7 days a week at the tap of a button. The interest will be charged only on the amount you use and when you choose to use it. You will also get a MoneyTap card along with the app that can be used like a regular credit card. Use the card for shopping online or offline and get reward points. Act now and have peace of mind!"]
+      },
+      "8": {
+        "value":["Yes, the details of the rewards programme will be shared with you when you receive the MoneyTap card through our partner bank."]
+      }
     },
-    "3": "Yes. You can transfer money from your app to your bank account and can use your regular ATM card to withdraw funds and use them as you wish or NEFT/IMPS to someone depending on your needs. The funds are yours.",
-    "4": "You have to pay interest only on the funds you use. At the time of withdrawal, you can choose the terms of repayment, which can be anywhere between 2 months and 3 years. The repayment tenure you choose will determine your EMIs.",
-    "5": "In addition to the App, the partner bank which approved your application will issue you a MoneyTap credit card that will be sent directly to your house. This can be used like a credit card at any shop or e-commerce website. The card is linked to the app and all the transactions will appear on the app. At the end of the month, like any other credit card, you can pay the balance at once or in part. All the shopping on your card will be interest free until the credit card payment is due.\nYou can also convert all applicable purchases on the card to EMIs with just a tap on the app if you cannot pay the entire balance at the end of the month. This conversion will save you a significant amount of interest.",
-    "6": "Yes. MoneyTap can be used to meet the money/financial requirements for any kind of personal use. Our customers typically use MoneyTap for the following reasons:\n\tWeddings\n\tBirth & Death\n\tTwo-wheeler deposits\n\tHome renovation\n\tHouse rent deposits\n\tShopping\n\tChildren’s school fees\n\tMedical emergencies",
-    "default": " "
+    "2":{
+      "label":"Process",
+      "value": [
+        "1. How do I apply for MoneyTap? Is it simple?",
+        "2. . Once I download the app, how much time will it take to complete the application?",
+        "3. Will I get an approval even if I apply on a holiday or beyond banking hours?",
+        "4. Once I am approved on the mobile app, can my application be rejected later?",
+        "5. Can I Change/Cancel my request?",
+        "6. How do I pay back?",
+        "7. Can I schedule/setup auto-debit from my bank?",
+        "8. How can I reschedule or change/postpone my EMI date? Is it possible?",
+        "9. What happens if I don’t pay back?",
+        "10. How is the credit limit decided?",
+        "11. Will my credit limit change under any circumstance?",
+        "12. Is having MoneyTap good or bad for my credit score?",
+        "13. Is there a chance that my credit limit might be revoked?",
+        "14. Is it necessary to download the MoneyTap app to apply for it?",
+        "15. How do I know if my application is approved?"
+      ],
+      "1": {
+        "value": [
+          "Yes, it’s as simple as 1, 2, 3!",
+          "1) *Download*: Install our free app from the Play Store and tell us a little bit about yourself. In a few minutes, we will tell you if you qualify for MoneyTap and your eligible credit limit.",
+          "2) *KYC*: Once you qualify, one of our agents, on behalf of our partner bank, will collect your documents at your house as a part of the KYC process.",
+          "3) *Manage your money*: Within a few days, you will receive your Card that will act not only as a credit card but do much more. You can start withdrawing funds from your app for any use you may have. You can choose your preferred EMI option and interest will be charged only on what you use. You could also use the card only for purchases!"
+        ]
+      },
+      "2": {
+        "value": ["An average customer takes 8-minutes to qualify, after opening the app. The speed might vary depending on how fast you can type!"]
+      },
+      "3": { 
+        "value" : ["Yes! However, the KYC verification process might be impacted on holidays."]
+      },
+      "4": {
+        "value" : [
+          "Our technology, along with our partner banks, does a series of checks on your application before the funds are available to you. If at any stage the information furnished by you or the verification(s) initiated by us are found to be incomplete, fraudulent or unverifiable then your application will be terminated. No fees will be charged.",
+          "So, please provide us the correct information at the onset!"
+        ]
+      },
+      "5": {
+        "value" : ["You can Change/Cancel your request before the final approval from MoneyTap has been given."]
+      },
+      "6": {
+        "value" : ["The payment is like any other credit card bill payment. You would be directly paying our partner bank. The app will display the amount you owe and remind you about this payment. You can make the payment by a cheque or online directly to the bank or through the app."]
+      },
+      "7": {
+        "value" :["Yes, you can go to the website of our Partner Bank who approved your application and follow the instructions there to setup auto-debit from your bank for payments."]
+      },
+      "8": {
+        "value":["At present, you cannot change or postpone your EMI date. Please ensure you have sufficient balance in your account before the EMI due date."]
+      },
+      "9": {
+        "value" : [
+          "The same consequences of not paying your credit card bill or bank loans apply. The Reserve Bank of India has nominated 4 credit agencies (e.g. CIBIL) that track your financial credit scores. If you do not repay or delay your repayment, our partner bank will automatically report it to these agencies, which will record the information. This can lower your credit score.",
+          "Once your credit score is affected, you will not only lose MoneyTap access, but all your future loan applications will be negatively impacted. You might not be able to get loans easily to buy a house, a car or a two-wheeler or get a credit-card, as all the lending institutions in the country check with these agencies before approving your loan.",
+          "The bank might also initiate legal recourse to recover the money from you.",
+          "In short, please do not use the funds if you don’t think you cannot pay your EMIs on time!]"
+        ]
+      },
+      "10": {
+        "value" : ["Our Financial Partner decides the credit limit based on your profile, income, credit history and other factors. This limit can be increased, decreased or blocked based on the bank’s credit policies and the details you give on the app about yourself."]
+      },
+      "11": {
+        "value" :["Yes. It can increase if you pay your EMIs and bills on time. There is a very good chance that our partner banks will raise your credit limit provided you have not taken too many other loans or seen a significant reduction in your income."]
+      },
+      "12": {
+        "value":[
+          "Good question.",
+          "A good credit score is one of the important criteria for you to get Credit Cards/Home/Car/2-wheeler in the future. Once you start using MoneyTap and take out cash or EMIs and make timely monthly payments, you start building your credit history. In fact, taking credit and repaying them is the single most important way to improve your credit score.",
+          "However, if you default or delay your monthly payments, your credit score will be impacted. Don’t worry, we will be reminding you regularly on your app so that you don’t miss your payments."
+
+        ]
+      },
+      "13": {
+        "value" :["Yes. The Partner Banks always have the right to revoke the line if they see activity that poses a credit risk to them. However, we expect this to be rare."]
+      },
+      "14": {
+        "value":["No. You can apply on the MoneyTap website here. Once you are successfully approved for a MoneyTap credit line. You can download the MoneyTap Android or iOS app to transfer funds to your bank account."]
+      },
+      "15": {
+        "value":["Your approval is instant, on the app. After that, we just need to complete the KYC formalities. There is NO CHARGE for approval. It is completely free."]
+      }
+    }
+  },
+  "2": {
+    "value": [
+      
+    ]
   }
 }
