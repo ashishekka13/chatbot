@@ -1,0 +1,34 @@
+{
+  "value": [
+    "1. About Moneytap",
+    "2. Process",
+    "3. Eligibility",
+    "4. Fees",
+    "5. Security",
+    "6. Support"
+  ],
+  "1": {
+    "label": "About Moneytap",
+    "value": [
+      "1. What is MoneyTap?",
+      "2.Which banks have you partnered with?",
+      "3.Can I take the money in cash and spend it on whatever I want? How?",
+      "4.Do I have to pay interest? Is it high?",
+      "5.How can I use MoneyTap for shopping?",
+      "6.Can I use MoneyTap for any other purpose?",
+      "7.What if I don’t need the funds right now?",
+      "8.Is there a rewards program linked to my card?"
+    ],
+    "1": {
+      "value": ["MoneyTap is India’s first app-based personal credit line, offered in partnership with banks. With the tap of a button, this app lets you borrow as little as Rs. 3000 or as much as Rs. 5 lakhs depending on your credit limit that is set by our banking partners. More importantly, you pay interest only on what you use."]
+  },
+    "2": {
+      "value": ["We have partnered with multiple banks and NBFCs to bring you the best set of products. Depending on your profile, we will select the bank that has the highest chance of approving your application. Once approved, your bank will be shown to you."]
+    },
+    "3": "Yes. You can transfer money from your app to your bank account and can use your regular ATM card to withdraw funds and use them as you wish or NEFT/IMPS to someone depending on your needs. The funds are yours.",
+    "4": "You have to pay interest only on the funds you use. At the time of withdrawal, you can choose the terms of repayment, which can be anywhere between 2 months and 3 years. The repayment tenure you choose will determine your EMIs.",
+    "5": "In addition to the App, the partner bank which approved your application will issue you a MoneyTap credit card that will be sent directly to your house. This can be used like a credit card at any shop or e-commerce website. The card is linked to the app and all the transactions will appear on the app. At the end of the month, like any other credit card, you can pay the balance at once or in part. All the shopping on your card will be interest free until the credit card payment is due.\nYou can also convert all applicable purchases on the card to EMIs with just a tap on the app if you cannot pay the entire balance at the end of the month. This conversion will save you a significant amount of interest.",
+    "6": "Yes. MoneyTap can be used to meet the money/financial requirements for any kind of personal use. Our customers typically use MoneyTap for the following reasons:\n\tWeddings\n\tBirth & Death\n\tTwo-wheeler deposits\n\tHome renovation\n\tHouse rent deposits\n\tShopping\n\tChildren’s school fees\n\tMedical emergencies",
+    "default": " "
+  }
+}

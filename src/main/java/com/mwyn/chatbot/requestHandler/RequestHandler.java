@@ -4,15 +4,21 @@ package com.mwyn.chatbot.requestHandler;
 import com.twilio.twiml.MessagingResponse;
 import com.twilio.twiml.messaging.Body;
 import com.twilio.twiml.messaging.Message;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;
 import java.sql.SQLOutput;
+import java.util.Arrays;
 import java.util.Enumeration;
+import java.util.List;
 
 
 @RestController
 public class RequestHandler {
+
+    @Autowired
+    private FaqHandler faqs;
 
     @RequestMapping(value = "/home")
     public String Home(){
@@ -36,6 +42,16 @@ public class RequestHandler {
 //        MessagingResponse response = new MessagingResponse.Builder().message(reply).build();
 
         return "hey you";
+    }
+
+    @RequestMapping(method=RequestMethod.POST , value="/try")
+    public String test(){
+        System.out.println("Api hit1");
+
+        faqs.parse();
+
+        System.out.println(  faqs.getResponse(Arrays.asList(1,1)));
+        return "Yes";
     }
 
 }
