@@ -18,7 +18,7 @@ public class Constants {
         }
 
         public static final String UNRECOGNISED = "Sorry, I am unable to understand what you just said.";
-        public static final String MENU_FOOTER="Any any stage Enter 0 to go back to the previous Menu.";
+        public static final String MENU_FOOTER="Any any stage Enter 0 to start over.";
         public static final String OTP_ERROR = "The OTP you entered does not match.";
         public static final String VALUE_UPDATED = "Please wait while we process the request";
         public static final String OTP_SENT="OTP has been sent to your mobile. Please enter it here";
