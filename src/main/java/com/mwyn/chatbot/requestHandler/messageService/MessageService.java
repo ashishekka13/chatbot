@@ -24,6 +24,8 @@ public class MessageService {
     }
 
     public  void sendSMSMessage(String user,String body) {
+        System.out.println(body);
+        /*
         Twilio.init(ACCOUNT_SID, AUTH_TOKEN);
         Message message = Message.creator(
                 new com.twilio.type.PhoneNumber(user),
@@ -31,6 +33,7 @@ public class MessageService {
                 body)
                 .create();
         System.out.println(message.getSid());
+        */
     }
 
 
