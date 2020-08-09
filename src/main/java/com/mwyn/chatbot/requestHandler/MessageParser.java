@@ -74,11 +74,18 @@ public class MessageParser {
             else if(st.substring(0,2).equals("ph"))
                 st=st.substring(3);
             else {
+                String[] parts = st.split(",");
                 List<Integer> fetch = new ArrayList<>();
-                for (int i = 0; i < st.length(); i++) {
-                    if(st.charAt(i)!=',')
-                        fetch.add(Integer.parseInt(String.valueOf(st.charAt(i))));
+                for (int i =0; i< parts.length ; i++){
+                    if(pattern.matcher(parts[i]).matches())
+                        fetch.add(Integer.parseInt(parts[i]));
+                    else
+                        return st;
                 }
+//                for (int i = 0; i < st.length(); i++) {
+//                    if(st.charAt(i)!=',')
+//                        fetch.add(Integer.parseInt(String.valueOf(st.charAt(i))));
+//                }
                 System.out.println(fetch);
                 sessionServices.setFaqState(user,fetch);
                 String response=faqHandler.getResponse(fetch,user);
