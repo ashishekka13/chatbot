@@ -29,6 +29,7 @@ public class MessageParser {
 
 
     public String parse(String user, String message) {
+        System.out.println(sessionServices.getField(user,"faqState"));
         if(sessionServices.isNew(user)){
             return faqHandler.getResponse(user) + "\n"+ MENU_FOOTER;
         }
@@ -98,6 +99,8 @@ public class MessageParser {
         } catch (Exception e) {
             e.printStackTrace();
         }
+        
+        System.out.println(sessionServices.getField(user,"faqState"));
         return UNRECOGNISED;
     }
 }
