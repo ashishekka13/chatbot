@@ -22,6 +22,7 @@ public class RequestHandler {
     @RequestMapping(value = "/home")
     public String Home(){
 //        callBackHandler.sendTo("whatsapp:+917768006557","Hey theree");
+        faqs.parse();
         return  "Hello. You are home. Please stay here";
     }
 

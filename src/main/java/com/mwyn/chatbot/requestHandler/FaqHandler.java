@@ -13,7 +13,6 @@ import java.io.File;
 import java.io.FileReader;
 import java.util.Iterator;
 import java.util.List;
-import java.util.Map;
 
 import static com.mwyn.chatbot.requestHandler.helpers.Constants.MESSAGE.UNRECOGNISED;
 
@@ -37,7 +36,7 @@ public class FaqHandler {
           File file = new File(classLoader.getResource("faq/faq.json").getFile());
 //          FileReader file = new FileReader("/faq/faq.json");
           Object obj = new JSONParser().parse( new FileReader(file));
-          System.out.println(obj);
+
           jo = (JSONObject) obj;
           }catch (Exception e){
           System.out.println("Execption");
@@ -46,12 +45,10 @@ public class FaqHandler {
      }
 
      public String getResponse(List<Integer> path, String user){
-          this.parse();
-          System.out.println("called1");
 
           Iterator<Integer> pathIterator = path.iterator();
-          System.out.println(jo);
-          System.out.println(jo.toJSONString().toString());
+
+
           JSONObject nextVal=jo;
           while(pathIterator.hasNext()){
                try {
